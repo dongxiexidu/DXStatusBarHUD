@@ -5,6 +5,11 @@
 @implementation DXStatusBarHUD
 static UIWindow *window_;
 static NSTimer *timer_;
+
+/** HUD控件的高度 */
+//#define DXWindowH = isIphoneX == true ? 44 : 20;
+//#define isIphoneX = [UIScreen mainScreen].bounds.size.width == 812.0 ? true : false
+
 /** HUD控件的高度 */
 static CGFloat const DXWindowH = 20;
 /** HUD控件的动画持续时间（出现\隐藏） */
@@ -22,7 +27,13 @@ static CGFloat const DXHUDStayDuration = 1.5;
     window_ = [[UIWindow alloc] init];
     window_.backgroundColor = [UIColor blackColor];
     window_.windowLevel = UIWindowLevelAlert;
-    window_.frame = CGRectMake(0, - DXWindowH, [UIScreen mainScreen].bounds.size.width, DXWindowH);
+    
+    if ([UIScreen mainScreen].bounds.size.height == 812.0) {
+        window_.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, DXWindowH);
+    }else{
+        window_.frame = CGRectMake(0, - DXWindowH, [UIScreen mainScreen].bounds.size.width, DXWindowH);
+    }
+    
     window_.hidden = NO;
     
     // 添加按钮
@@ -43,7 +54,12 @@ static CGFloat const DXHUDStayDuration = 1.5;
     // 动画
     [UIView animateWithDuration:DXAnimationDuration animations:^{
         CGRect frame = window_.frame;
-        frame.origin.y = 0;
+         if ([UIScreen mainScreen].bounds.size.height == 812.0) {
+             frame.origin.y = DXWindowH;
+         }else{
+             frame.origin.y = 0;
+         }
+        
         window_.frame = frame;
     }];
     

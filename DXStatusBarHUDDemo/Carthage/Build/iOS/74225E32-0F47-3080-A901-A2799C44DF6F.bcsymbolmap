@@ -1,0 +1,30 @@
+BCSymbolMap Version: 2.0
++[DXStatusBarHUD showImage:text:]
+___33+[DXStatusBarHUD showImage:text:]_block_invoke
++[DXStatusBarHUD showImageName:text:]
++[DXStatusBarHUD showSuccess:]
++[DXStatusBarHUD showError:]
++[DXStatusBarHUD showText:]
++[DXStatusBarHUD showLoading:]
+___30+[DXStatusBarHUD showLoading:]_block_invoke
++[DXStatusBarHUD hide]
+___22+[DXStatusBarHUD hide]_block_invoke
+___22+[DXStatusBarHUD hide]_block_invoke_2
+_timer_
+_window_
+___block_descriptor_tmp
+___block_literal_global
+___block_descriptor_tmp.70
+___block_literal_global.71
+___block_descriptor_tmp.72
+___block_literal_global.73
+___block_descriptor_tmp.75
+___block_literal_global.76
+Apple LLVM version 9.0.0 (clang-900.0.39.2)
+/Users/fashion/Documents/GitHub/DXStatusBarHUD/DXStatusBarHUDDemo/DXStatusBarHUDDemo/DXStatusBarHUD/DXStatusBarHUD.m
+/Users/fashion/Documents/GitHub/DXStatusBarHUD/DXStatusBarHUDDemo
+__22+[DXStatusBarHUD hide]_block_invoke_2
+__22+[DXStatusBarHUD hide]_block_invoke
+__30+[DXStatusBarHUD showLoading:]_block_invoke
+__33+[DXStatusBarHUD showImage:text:]_block_invoke
+/Users/fashion/Library/Developer/Xcode/DerivedData/DXStatusBarHUDDemo-fshplzfninmfonbdibagxqxwxlxv/Build/Intermediates.noindex/DXStatusBarHUDDemo.build/Release-iphoneos/DXStatusBarHUD.build/DerivedSources/DXStatusBarHUD_vers.c

@@ -1,0 +1,6 @@
+framework module DXStatusBarHUD {
+  umbrella header "DXStatusBarHUD.h"
+
+  export *
+  module * { export * }
+}
